@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    webkit-font-smoothing:antialised;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+nav {
+    position: relative;
+    padding-bottom: 12px;
+  }
+  nav .line{
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background:yellowgreen;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li { 
+    opacity: 0.4;
+    margin: 0 40px 0 0;
+    transition: all 0.8ms ease;
+  }
+  nav ul li:hover{
+opacity: 0.7;
+
+  }
+  nav ul li.active{
+    opacity: 1;
+  }
+  
+  nav ul li:last-child{
+    margin-right: 0;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+  nav ul li a:hover{
+font-style: italic;
+font-weight: 900;
+color: blueviolet;
+    text-decoration: underline;
+  }
